@@ -16,10 +16,11 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const navLinks = [
     { id: 'overview', label: '核心概览' },
+    { id: 'evolution', label: '演进史' },
     { id: 'pipeline', label: '语义生产线' },
     { id: 'advantages', label: '核心优势与矩阵' },
     { id: 'genesis', label: '共生溯源' },
-    { id: 'semantics', label: '三层公理' },
+    { id: 'semantics', label: '三层语义' },
     { id: 'case-study', label: '实战闭环' },
     { id: 'simulator', label: '推理沙盘' },
     { id: 'metrics', label: '量化成效' },

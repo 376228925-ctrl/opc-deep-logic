@@ -37,7 +37,7 @@ export const EvidenceGallery: React.FC<EvidenceGalleryProps> = ({ onSelectImage 
               实录佐证中心 <span className="text-cyan-400 font-normal">/ Evidence Center</span>
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
-              38 张原件，38 处沉实脚印。从痛点链路的探源到三层公理的立规，每一个论断背后皆有真实系统日志印证。
+              38 张申报原件，真实可查。从痛点链路的探源到三层语义规范的确立，每一个论断背后皆有真实系统日志与业务记录印证。
             </p>
           </div>
 

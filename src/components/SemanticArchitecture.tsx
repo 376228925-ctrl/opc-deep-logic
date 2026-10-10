@@ -35,7 +35,7 @@ export const SemanticArchitecture: React.FC<SemanticArchitectureProps> = ({ onOp
 
   const skillCodeSnippets: Record<string, string> = {
     data: `# 顺丰原子 Skill · 数据语义配置文件 (data_semantics.yaml)
-# 定义数仓物理准入白名单、指标公理公式与双向勾稽算子
+# 定义数仓物理准入白名单、核心指标公式与双向勾稽算子
 version: 2.1
 layer: DATA_SEMANTICS
 domain: "产品业务处·全网经营分析基底"
@@ -48,7 +48,7 @@ security_firewall:
       update_cycle: "DAILY_T_PLUS_1"
   denied_patterns: ["temp_*", "tmp_*", "dev_*", "*_backup"]
 
-metric_axioms:
+metric_rules:
   - id: actual_revenue
     formula: "SUM(settled_income_amt)"
     comment: "仅统计已完成履约实收收入，剔除退费与未妥投暂估"
@@ -92,12 +92,12 @@ temporal_calibration:
       smoothing_window_days: 14
 `,
     analysis: `# 顺丰原子 Skill · 分析语义配置文件 (analysis_semantics.yaml)
-# 规范五步推导公理链、贡献度与因果性分离、证据不足终止机制
+# 规范五步推导闭环、贡献度与因果性分离、证据不足终止机制
 version: 2.1
 layer: ANALYSIS_SEMANTICS
 domain: "异常波动归因推理与管理建议闭环"
 
-axiomatic_pipeline:
+reasoning_pipeline:
   step_1_anomaly: "VERIFY_BASELINE_AND_EXCLUDE_NOISE"
   step_2_decomposition: "DECOUPLE_VOLUME_VS_PRICE_CONTRIBUTION"
   step_3_entity_localization: "IDENTIFY_TOP_VOLATILE_GROUP_CLIENTS"
@@ -110,7 +110,7 @@ invariants:
     enforce: "贡献多少是数学分解，为何发生是因果实证，严禁混同"
   - id: "STOP_CONDITION"
     rule: "IF_EVIDENCE_INCOMPLETE_DECLARE_BLIND_SPOT"
-    enforce: "若无外部运力或市场佐证，严禁胡编乱造，主动列为待核实项"
+    enforce: "若无外部运力或市场佐证，严禁无据推测，主动列为待核实项"
 `,
   };
 
@@ -120,18 +120,18 @@ invariants:
         {/* Section Header with Roadshow Mega Typography */}
         <div className="max-w-4xl mb-16">
           <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest mb-3">
-            <span>[ 02 · 核心技术公理 · 三层语义体系架构 ]</span>
+            <span>[ 02 · 核心技术架构 · 三层语义体系规范 ]</span>
           </div>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] mb-5">
             独创「三层语义」体系：
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300">
-              为顺丰复杂业务构筑严谨的数字本体论
+              为顺丰复杂业务构筑严谨的数字底座
             </span>
           </h2>
           <p className="text-base sm:text-xl text-slate-300 leading-relaxed font-normal">
-            以数据之真，筑逻辑之基；以业务之形，解流转之惑；以分析之理，达洞察之巅。
+            以数据之真夯实分析底座，以业务之形还原客群网络，以分析之理收口因果推导。
             <br className="hidden sm:inline" />
-            我们将资深策略专家的隐性经验沉淀为工程化原子 Skill，实现从黑盒幻觉到白盒确定性的飞跃。
+            我们将资深策略专家的隐性经验沉淀为工程化原子 Skill，实现从黑盒幻觉到白盒确定性的质变。
           </p>
         </div>
 
@@ -173,7 +173,7 @@ invariants:
                 </div>
 
                 <div className="pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
-                  <span className="text-slate-500">公理机制</span>
+                  <span className="text-slate-500">约束机制</span>
                   <span className="text-cyan-300 font-bold">
                     {layer.id === 'data' ? '双向勾稽 0 容差' : layer.id === 'business' ? '实体拓扑对冲' : '因果分离收口'}
                   </span>
@@ -187,7 +187,7 @@ invariants:
         <div className="rounded-3xl bg-slate-950/95 border border-cyan-500/30 p-6 sm:p-10 shadow-[0_0_60px_rgba(6,182,212,0.15)] backdrop-blur-2xl">
           <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-800 mb-8">
             <div>
-              <div className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-bold">公理规则深入解析</div>
+              <div className="text-xs font-mono text-cyan-400 uppercase tracking-wider font-bold">语义规则深入解析</div>
               <h3 className="text-2xl font-black text-white flex items-center gap-3 mt-1">
                 <span>{currentLayer.title}</span>
                 <span className="text-xs text-cyan-300 font-mono font-bold bg-cyan-950/80 px-2.5 py-1 rounded-md border border-cyan-800">

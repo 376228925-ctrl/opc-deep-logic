@@ -18,7 +18,7 @@ export const CognitiveParadigmSection: React.FC<CognitiveParadigmSectionProps> =
               [ 01 · 业务断层与方案破局 ]
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
-              传统问数链路 vs 语义层公理闭环
+              传统问数链路 vs 语义层确定性闭环
             </h2>
           </div>
 
@@ -87,7 +87,7 @@ export const CognitiveParadigmSection: React.FC<CognitiveParadigmSectionProps> =
               </div>
 
               <div className="flex items-center justify-between pt-3 border-t border-slate-800 text-xs text-slate-400">
-                <span>根本原因：缺少数据源白名单、客户实体网络与分析推理公理约束</span>
+                <span>根本原因：缺少数据源白名单、客户实体网络与分析推理规则约束</span>
                 <button
                   onClick={() => onOpenImage('img-1')}
                   className="text-cyan-400 hover:text-cyan-300 font-medium cursor-pointer"
@@ -101,7 +101,7 @@ export const CognitiveParadigmSection: React.FC<CognitiveParadigmSectionProps> =
             <div className="space-y-6">
               <div className="flex items-center justify-between pb-3 border-b border-slate-800 text-xs">
                 <span className="font-mono text-cyan-400 font-bold">
-                  ✓ 语义层公理链路：0容差勾稽、实体归并、因果证据链
+                  ✓ 语义层确定性链路：0容差勾稽、实体归并、因果证据链
                 </span>
                 <span className="text-emerald-400 font-mono font-bold">耗时：30 分钟 (提效 95%)</span>
               </div>

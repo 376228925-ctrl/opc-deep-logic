@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
+import { SymbioticEvolutionSection } from './components/SymbioticEvolutionSection';
 import { PipelineSection } from './components/PipelineSection';
 import { CoreAdvantagesSection } from './components/CoreAdvantagesSection';
 import { SymbioticGenesisSection } from './components/SymbioticGenesisSection';
@@ -60,7 +61,7 @@ export default function App() {
 
           {/* Main Body Showcase Sections */}
           <main>
-            {/* Act 1: Hero Section (High-cognitive title, origin story, pills) */}
+            {/* Act 1: Hero Section (Contest Title, Identity, Core Stance, Official Blueprint Viewport) */}
             <HeroSection
               onStartPresentation={() => setIsPresentationMode(true)}
               onExploreSemantics={() => scrollToSection('semantics')}
@@ -68,33 +69,36 @@ export default function App() {
               onOpenImage={handleOpenImageById}
             />
 
-            {/* Act 2: Pipeline Section (Closed-loop 5-stage production line & 4 Bento cards) */}
+            {/* Act 2: Symbiotic Intelligence Evolution History (60-year Methodology & SF Practice) */}
+            <SymbioticEvolutionSection onOpenImage={handleOpenImageById} />
+
+            {/* Act 3: Pipeline Section (Closed-loop 5-stage production line & 4 Bento cards) */}
             <PipelineSection onOpenImage={handleOpenImageById} />
 
-            {/* Act 3: Core Advantages & Superiority Comparison Matrix */}
+            {/* Act 4: Core Advantages & Superiority Comparison Matrix */}
             <CoreAdvantagesSection onOpenImage={handleOpenImageById} />
 
-            {/* Act 4: Symbiotic Genesis Section (Human-GPT Co-creation Dialogue & First-in-SF Implementation) */}
+            {/* Act 5: Symbiotic Genesis Section (Human-GPT Co-creation Dialogue & First-in-SF Implementation) */}
             <SymbioticGenesisSection onOpenImage={handleOpenImageById} />
 
-            {/* Act 5: Semantic Architecture (Interactive 3 layers & YAML configs) */}
+            {/* Act 6: Semantic Architecture (Interactive 3 layers & YAML configs) */}
             <SemanticArchitecture onOpenImage={handleOpenImageById} />
 
-            {/* Act 6: Dual Carrier ToolChain (FengJingTai & LingHui platforms) */}
+            {/* Act 7: Dual Carrier ToolChain (FengJingTai & LingHui platforms) */}
             <ToolChainSection onOpenImage={handleOpenImageById} />
 
-            {/* Act 7: Real Case Study Walkthrough */}
+            {/* Act 8: Real Case Study Walkthrough */}
             <CaseStudyWalkthrough onOpenImage={handleOpenImageById} />
 
-            {/* Act 8: Agent Whitebox Reasoning Simulator */}
+            {/* Act 9: Agent Whitebox Reasoning Simulator */}
             <div id="simulator">
               <AgentSimulator />
             </div>
 
-            {/* Act 9: Impact Stats & Official Showcase (Metrics & Real Outcomes) */}
+            {/* Act 10: Impact Stats & Official Showcase (Metrics & Real Outcomes) */}
             <MetricsAndRoiSection onOpenImage={handleOpenImageById} />
 
-            {/* Act 10: Evidence Center (38 original declaration screenshots with high-res zoom) */}
+            {/* Act 11: Evidence Center (38 original declaration screenshots with high-res zoom) */}
             <EvidenceGallery onSelectImage={(img) => setSelectedImage(img)} />
           </main>
 

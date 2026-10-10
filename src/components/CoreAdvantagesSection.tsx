@@ -24,36 +24,36 @@ export const CoreAdvantagesSection: React.FC<CoreAdvantagesSectionProps> = ({ on
       id: 'adv-1',
       icon: Cpu,
       color: '#38BDF8',
-      tag: '认 知 之 升',
-      title: '高维共生：从黑盒盲猜到白盒逻辑推演',
-      desc: '通用大模型不具备顺丰特定的业务网络与分析标准。我们通过与 ChatGPT 的深度思辨碰撞，原创「数据·业务·分析」三层语义，将专家不可言说的隐性直觉显性化，赋予 Agent 真正理解顺丰业务的因果推导基石。',
-      quote: '“不再把 AI 当作单向黑盒算力，而是在人机共生中创造属于顺丰的确定性分析方法论。”',
+      tag: '人机协同范式',
+      title: '高阶共生：从黑盒盲猜到白盒逻辑推演',
+      desc: '通用大模型不具备顺丰特定的业务网络与分析标准。我们通过与 ChatGPT 的深度思辨，原创「数据·业务·分析」三层语义，将专家隐性直觉显性化为确定性规则，赋予智能体真正理解顺丰业务的因果推导基石。',
+      quote: '“不再把 AI 当作单向黑盒工具，而是在人机共生中沉淀属于顺丰的确定性分析方法论。”',
     },
     {
       id: 'adv-2',
       icon: ShieldCheck,
       color: '#06B6D4',
-      tag: '数 据 之 真',
-      title: '精度公理：0.00% 容差双向勾稽杜绝假数字',
-      desc: '数仓权威正式表物理白名单严格准入，杜绝调用废弃临时表；下钻明细汇总值与宏观大盘总额执行 0.00% 容差二次勾稽校验，彻底斩断传统 ChatBI“算错数、用错表、看得到不敢用”的致命死穴。',
-      quote: '“对数仓 0 容差双向勾稽，让输出的每一个数字都有据可查、经得起财务级审核。”',
+      tag: '数据质量准入',
+      title: '数据准入：0.00% 容差双向勾稽确保数据真实',
+      desc: '数仓权威正式表物理白名单严格准入，杜绝调用废弃临时表；下钻明细汇总值与宏观大盘总额执行 0.00% 容差二次勾稽校验，彻底解决传统 ChatBI“算错数、用错表、看得到不敢用”的失准硬伤。',
+      quote: '“对数仓 0 容差双向比对，让输出的每一个数字都有据可查、经得起财务级审核。”',
     },
     {
       id: 'adv-3',
       icon: GitBranch,
       color: '#10B981',
-      tag: '业 务 之 神',
-      title: '实体洞穿：母子卡网络拓扑排除假性流失',
+      tag: '业务网络穿透',
+      title: '实体穿透：母子卡网络拓扑排除假性流失',
       desc: '深度理解顺丰客户签约与开票实体网络，自动归并集团母公司与各区部月结卡网络。精准识别开票主体内部划转，绝不将调账误判为退网流失，避免一线团队盲目登门降价，保护核心客群收益。',
-      quote: '“看懂母子卡与大促错位窗口，Agent 才能具备真正懂顺丰产品与客户的商业穿透力。”',
+      quote: '“看懂母子卡与大促错位窗口，智能体才能具备真正懂顺丰产品与客户的商业穿透力。”',
     },
     {
       id: 'adv-4',
       icon: Sparkles,
       color: '#818CF8',
-      tag: '组 织 之 器',
-      title: '资产长青：原子 Skill 解耦与组织经验永续',
-      desc: '将标准化五步推导与反例错题本沉淀为与大模型底座解耦的原子 Skill。经验不再随单次对话结束而归零，新区域、新产品场景仅需 0.5 天极速装载，一人创新推动全网复制，赋能 OPC 超级个体。',
+      tag: '组织能力沉淀',
+      title: '资产沉淀：原子 Skill 解耦与组织经验复用',
+      desc: '将标准化五步推导与反例错题本沉淀为与大模型底座解耦的原子 Skill。经验不再随单次对话结束而归零，新区域、新产品场景仅需 0.5 天极速装载，一人经验转化为全网复用能力，赋能业务超级个体。',
       quote: '“从个人专家经验到工程化组织资产，经验只增不减，实现持续迭代进化。”',
     },
   ];
@@ -83,8 +83,8 @@ export const CoreAdvantagesSection: React.FC<CoreAdvantagesSectionProps> = ({ on
     {
       dimension: '业务口径理解力',
       traditional: '仅存在于资深分析师脑中，口径定义模糊，跨部门对齐耗时数天',
-      chatbi: '仅依赖 Text-to-SQL 机械转译，不懂顺丰母子卡与大促业务日历，频现常识性笑话',
-      symbiotic: '【三层语义显性化】将业务常识沉淀为机器公理，100% 准确映射业务实质',
+      chatbi: '仅依赖 Text-to-SQL 机械转译，不懂顺丰母子卡与大促业务日历，频现常识性错误',
+      symbiotic: '【三层语义显性化】将业务经验转化为确定性规则，准确映射业务实质',
       win: true,
     },
     {
@@ -119,7 +119,7 @@ export const CoreAdvantagesSection: React.FC<CoreAdvantagesSectionProps> = ({ on
       dimension: '经验沉淀与跨区复用',
       traditional: '人员流动或转岗后经验断档，新员工需要重新踩坑',
       chatbi: '单次会话结束后记忆归零，无法沉淀为组织级可持续资产',
-      symbiotic: '【原子 Skill 资产库】与模型解耦热插拔，新场景 0.5 天极速装载，全网资产持续升值',
+      symbiotic: '【原子 Skill 资产库】与模型解耦热插拔，新场景 0.5 天极速装载，全网资产持续沉淀',
       win: true,
     },
   ];
@@ -129,16 +129,16 @@ export const CoreAdvantagesSection: React.FC<CoreAdvantagesSectionProps> = ({ on
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header with Roadshow Mega Typography */}
         <div className="text-center mb-16">
-          <div className="text-xs font-mono text-cyan-400 tracking-[0.3em] mb-3 uppercase">
-            原 创 方 法 论 优 势 · 让 AGENT 真 正 读 懂 顺 丰
+          <div className="text-xs font-mono text-cyan-400 tracking-[0.3em] mb-3 uppercase font-semibold">
+            原创方法论优势 · 让智能体真正理解顺丰业务
           </div>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4">
-            核心优势与全维矩阵 <span className="text-cyan-400 font-normal">/ Superiority Matrix</span>
+            核心优势与全维对比矩阵 <span className="text-cyan-400 font-normal">/ Superiority Matrix</span>
           </h2>
           <p className="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            不滞于单点算力的虚假繁荣，归真于复杂业务的确定交付。
+            摒弃单点演示的概念炒作，回归复杂业务的确定交付。
             <br className="hidden sm:inline" />
-            通过共生智能语义层，为顺丰构建真正经得起实战考验的确定性生产力引擎。
+            通过共生智能语义层，为顺丰构建真正经得起实战检验的确定性生产力引擎。
           </p>
         </div>
 
@@ -188,7 +188,7 @@ export const CoreAdvantagesSection: React.FC<CoreAdvantagesSectionProps> = ({ on
         {/* MONUMENTAL SHOWCASE PREVIEW CARDS (大 UI 组件 + 配图) */}
         <div className="mb-20">
           <div className="text-center mb-10">
-            <div className="text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2">
+            <div className="text-xs font-mono text-cyan-400 uppercase tracking-widest mb-2 font-semibold">
               [ 生产环境实战样板 · 证据链 ]
             </div>
             <h3 className="text-2xl sm:text-4xl font-black text-white">
@@ -201,104 +201,98 @@ export const CoreAdvantagesSection: React.FC<CoreAdvantagesSectionProps> = ({ on
               <div
                 key={art.id}
                 onClick={() => onOpenImage && onOpenImage(art.id)}
-                className="rounded-3xl bg-[#080E20]/90 border border-cyan-500/20 hover:border-cyan-400/60 p-5 flex flex-col justify-between transition-all hover:scale-[1.02] shadow-xl group cursor-pointer"
+                className="rounded-3xl bg-[#091124]/90 border border-cyan-500/25 p-5 hover:border-cyan-400/60 transition-all cursor-pointer group shadow-xl"
               >
                 <div className="relative rounded-2xl overflow-hidden mb-4 border border-white/10 bg-slate-950">
                   <img
                     src={art.src}
                     alt={art.title}
-                    className="w-full h-48 object-cover object-top transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-48 object-contain transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-                  <span className="absolute bottom-2 left-2 px-2.5 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-950/90 text-cyan-300 border border-cyan-800">
-                    {art.id.toUpperCase()}
-                  </span>
+                  <div className="absolute bottom-3 right-3 px-2 py-1 rounded bg-slate-900/90 text-[10px] font-mono text-cyan-300 border border-white/10 flex items-center gap-1">
+                    <Maximize2 className="w-3 h-3" /> 点击放大
+                  </div>
                 </div>
 
-                <div>
-                  <h4 className="text-lg font-black text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                <div className="space-y-1">
+                  <div className="text-xs font-mono text-cyan-400 font-bold">
+                    {art.id.toUpperCase()} · 申报原件
+                  </div>
+                  <h4 className="text-base sm:text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">
                     {art.title}
                   </h4>
-                  <p className="text-xs text-slate-400 font-mono mb-4">
+                  <p className="text-xs text-slate-400 leading-relaxed">
                     {art.sub}
                   </p>
-                </div>
-
-                <div className="pt-3 border-t border-white/5 flex items-center justify-between text-xs font-mono text-cyan-400 font-bold">
-                  <span>检视申报高精度截图</span>
-                  <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* The Full Comparison Matrix (权威全维对比矩阵) */}
-        <div className="rounded-3xl bg-[#070D1D]/95 border border-cyan-500/30 p-8 sm:p-12 shadow-[0_0_60px_rgba(6,182,212,0.15)]">
-          <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-white/10">
+        {/* Master Comparison Matrix Table */}
+        <div className="rounded-3xl bg-[#070D1D]/95 border border-cyan-500/30 overflow-hidden shadow-[0_0_80px_rgba(6,182,212,0.16)] backdrop-blur-2xl">
+          <div className="p-6 sm:p-8 border-b border-white/10 flex flex-wrap items-center justify-between gap-4 bg-[#0A1226]">
             <div>
-              <div className="text-xs font-mono text-cyan-400 uppercase tracking-widest mb-1.5 font-bold">
-                三 代 分 析 范 式 纵 向 对 标
+              <div className="text-xs font-mono text-cyan-400 uppercase tracking-widest mb-1 font-semibold">
+                [ 核心竞争力量化研判 ]
               </div>
-              <h3 className="text-2xl sm:text-3xl font-black text-white">
-                全维对标矩阵：为什么共生智能语义层是唯一解？
+              <h3 className="text-xl sm:text-2xl font-black text-white">
+                三大范式全维对比矩阵 (Full Benchmark)
               </h3>
             </div>
             <div className="flex items-center gap-4 text-xs font-mono">
               <span className="flex items-center gap-1.5 text-rose-400">
-                <XCircle className="w-4 h-4" /> 传统人工
+                <XCircle className="w-4 h-4" /> 传统人工/ChatBI
               </span>
-              <span className="flex items-center gap-1.5 text-amber-400">
-                <AlertTriangle className="w-4 h-4" /> 传统 ChatBI
-              </span>
-              <span className="flex items-center gap-1.5 text-cyan-300 font-black">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" /> 顺丰共生智能语义层
+              <span className="flex items-center gap-1.5 text-emerald-400 font-bold">
+                <CheckCircle2 className="w-4 h-4" /> 顺丰共生智能语义层
               </span>
             </div>
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
+            <table className="w-full text-left text-sm border-collapse">
               <thead>
-                <tr className="border-b border-white/10 text-xs font-mono uppercase text-slate-400">
-                  <th className="py-4 px-4 w-1/5">评估维度</th>
-                  <th className="py-4 px-4 w-1/4 text-rose-300/80">传统人工排查链路</th>
-                  <th className="py-4 px-4 w-1/4 text-amber-300/80">传统 ChatBI / 盲目调用</th>
-                  <th className="py-4 px-4 w-3/10 text-cyan-300 bg-cyan-950/30 rounded-t-xl font-black">
-                    顺丰共生智能语义层 Agent
+                <tr className="border-b border-white/10 bg-white/[0.02] text-xs font-mono text-slate-400">
+                  <th className="py-4 px-6 w-1/5">评估维度</th>
+                  <th className="py-4 px-6 w-1/4">传统手工取数分析</th>
+                  <th className="py-4 px-6 w-1/4">传统单向 ChatBI (无语义层)</th>
+                  <th className="py-4 px-6 w-3/10 text-cyan-300 bg-cyan-950/20 font-bold">
+                    顺丰共生智能语义层 (自研)
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-white/5 text-xs sm:text-sm">
+              <tbody className="divide-y divide-white/5 text-slate-300">
                 {matrixRows.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-4 px-4 font-black text-white font-mono">
-                      {row.dimension}
+                  <tr
+                    key={idx}
+                    className="hover:bg-white/[0.02] transition-colors group"
+                  >
+                    <td className="py-5 px-6 font-bold text-white align-top">
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                        <span>{row.dimension}</span>
+                      </div>
                     </td>
-                    <td className="py-4 px-4 text-slate-400 leading-relaxed">
+                    <td className="py-5 px-6 text-slate-400 text-xs sm:text-sm leading-relaxed align-top">
                       {row.traditional}
                     </td>
-                    <td className="py-4 px-4 text-slate-400 leading-relaxed">
+                    <td className="py-5 px-6 text-slate-400 text-xs sm:text-sm leading-relaxed align-top">
                       {row.chatbi}
                     </td>
-                    <td className="py-4 px-4 text-cyan-100 bg-cyan-950/30 leading-relaxed font-semibold">
-                      {row.symbiotic}
+                    <td className="py-5 px-6 bg-cyan-950/15 text-slate-200 text-xs sm:text-sm leading-relaxed align-top font-medium border-l border-cyan-500/20">
+                      <span className="text-cyan-300 font-bold block mb-1">
+                        {row.symbiotic.split('】')[0]}】
+                      </span>
+                      {row.symbiotic.split('】')[1]}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between text-xs sm:text-sm text-slate-400 gap-4">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
-              <span className="text-slate-300">经顺丰 M 线本部产品业务处实测验证 · 覆盖业务月活 2000+ MAU</span>
-            </div>
-            <div className="font-mono text-cyan-300 font-bold">
-              金牌数仓认证 · 容差 0.00% · 端到端闭环 30 分钟
-            </div>
           </div>
         </div>
       </div>

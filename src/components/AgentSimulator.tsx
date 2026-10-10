@@ -20,7 +20,7 @@ export const AgentSimulator: React.FC = () => {
       id: 's1',
       title: '场景 1：异常收入回落归因',
       query: '请分析华南某区上月特快产品收入环比下滑 5.3% 的主要归因与波动客户。',
-      layerTriggered: '数据语义 + 分析语义公理',
+      layerTriggered: '数据语义 + 分析语义规则',
       steps: [
         { label: '数据语义层校验', detail: '锁定数仓金牌收入表 dws_sf_prod_rev_di，核验明细求和与大盘总额一致，差额 0.00%。', status: 'success' },
         { label: '量价解耦拆解', detail: '计算票数贡献与票均单价贡献，发现件量减少贡献 87.4%，单价波动仅贡献 12.6%。', status: 'info' },
@@ -99,7 +99,7 @@ export const AgentSimulator: React.FC = () => {
               </span>
             </div>
             <span className="text-slate-400">
-              激活公理：<strong className="text-cyan-400">{activeScenario.layerTriggered}</strong>
+              生效规则：<strong className="text-cyan-400">{activeScenario.layerTriggered}</strong>
             </span>
           </div>
 

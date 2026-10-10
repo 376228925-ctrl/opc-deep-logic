@@ -96,7 +96,7 @@ export const CaseStudyWalkthrough: React.FC<CaseStudyWalkthroughProps> = ({ onOp
 
               {/* AI Agent Action Execution */}
               <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
-                <div className="text-xs font-mono text-cyan-400 font-bold">智能体公理推演与动作 (Agent Reasoning)</div>
+                <div className="text-xs font-mono text-cyan-400 font-bold">智能体语义推演与动作 (Agent Reasoning)</div>
                 <p className="text-xs text-slate-300 leading-relaxed">{currentStep.aiAction}</p>
               </div>
 

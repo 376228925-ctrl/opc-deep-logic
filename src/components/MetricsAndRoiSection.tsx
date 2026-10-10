@@ -48,16 +48,16 @@ export const MetricsAndRoiSection: React.FC<MetricsAndRoiSectionProps> = ({ onOp
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header with Roadshow Mega Typography & Literary Elevation */}
         <div className="text-center mb-16">
-          <div className="text-xs font-mono text-cyan-400 tracking-[0.3em] mb-3 uppercase">
-            量 化 胜 境 · 真 实 可 核 验 的 战 果 跃 迁
+          <div className="text-xs font-mono text-cyan-400 tracking-[0.3em] mb-3 uppercase font-semibold">
+            量 化 业 务 成 效 · 真 实 可 核 验 的 生 产 提 效
           </div>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-4">
-            以确凿之数字，证语义之威力
+            量化成效与业务价值验证
           </h2>
           <p className="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto font-normal leading-relaxed">
-            不谈浮夸的算法黑话，只看生产线的真实提效。
+            不谈浮夸概念，只看生产线的真实提效。
             <br className="hidden sm:inline" />
-            当隐性经验被铸就为坚固公理，时间便化为顺丰数智增长的倍增杠杆。
+            当分析师的隐性经验转化为确定性的语义规则，时间便成为驱动顺丰业务增长的有效杠杆。
           </p>
         </div>
 

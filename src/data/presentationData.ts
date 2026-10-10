@@ -36,9 +36,9 @@ export const SLIDES_DATA: SlideContent[] = [
     visualType: 'hero',
     imageId: 'img-4',
     speakerStrategy: {
-      opening: '各位评委好！我是来自产品业务处的孙豪杰。今天我路演的课题是《共生智能认知下的语义层数据分析实践》。',
+      opening: '各位评委好！我是来自产品业务处的孙豪杰。今天我路演的课题是《基于共生智能下的语义层数据分析实践》。',
       coreArgument: '本课题解决的核心问题是：为什么业务人员查了数，在关键复盘会上还是不敢直接使用 AI 给出的结论？',
-      defenseFocus: '开门见山树立方案站位：用三层语义公理，把专家经验外化为生产级资产。',
+      defenseFocus: '开门见山树立方案站位：用三层语义规范体系，把专家经验沉淀为系统化资产。',
     },
   },
   {
@@ -108,7 +108,7 @@ export const SLIDES_DATA: SlideContent[] = [
     thesis: '本方案不是人类向 AI 下达单向指令，而是人提供业务先验与反例约束、AI 提供多源推理与证据组织，最终沉淀出标准化的三层语义 Skill。',
     keyPoints: [
       {
-        title: '人负责：公理边界与反例检验',
+        title: '人负责：规则边界与反例检验',
         description: '定义数据权威源、实体映射规则、排除伪流失反例，设定停机收口红线。',
       },
       {
@@ -124,7 +124,7 @@ export const SLIDES_DATA: SlideContent[] = [
     imageId: 'img-15',
     speakerStrategy: {
       opening: '这项方案是我们在实际业务中，与大模型反复辩论、反例纠偏中沉淀出的思维方法。',
-      coreArgument: '它把分析专家的脑内常识变成了代码级公理，让人与 AI 形成真正的共生。',
+      coreArgument: '它把分析专家的经验沉淀为系统可执行的规则，让人与 AI 形成真正的共生。',
       defenseFocus: '凸显创新性与人机协同的方法论深度。',
     },
   },
@@ -395,7 +395,7 @@ export const SLIDES_DATA: SlideContent[] = [
     chapter: '13 / 远景蓝图',
     tag: 'FUTURE VISION',
     title: '从超级个体走向顺丰全链路数智运营中枢',
-    subtitle: '人机共生驱动下，顺丰智慧运营的新质生产力跃迁',
+    subtitle: '人机共生驱动下，顺丰智慧运营的效能升级',
     thesis: '在 OPC 全链路赛道中，我们展示了个人在 AI 时代的无限可能。当全网一线人员都武装上语义层，顺丰将拥有强大的数智分析网。',
     keyPoints: [
       {
@@ -415,7 +415,7 @@ export const SLIDES_DATA: SlideContent[] = [
     imageId: 'img-17',
     speakerStrategy: {
       opening: '今天展示的是个人如何凭借共生智能成为全链路超级个体。',
-      coreArgument: '明天当这套语义公理推广到各区部，将为顺丰构建起极具敏锐度的数智运营中枢。',
+      coreArgument: '明天当这套语义规则推广到各区部，将为顺丰构建起极具敏锐度的数智运营中枢。',
       defenseFocus: '升华演讲主题，对齐集团数字化战略主线。',
     },
   },

@@ -1,17 +1,75 @@
 import { MetricItem, SemanticLayerDef, CaseStep, ScorecardCriterion } from '../types';
 
 export const PROJECT_INFO = {
-  title: '共生智能认知下的语义层数据分析实践',
-  subtitle: '构建企业级数据语义·业务语义·分析语义体系',
-  englishTitle: 'Semantic Layer Data Analytics Under Symbiotic Intelligence',
-  teamName: 'cognitive shift',
-  track: '个人赛道 · OPC 全链路 10 强',
-  organization: 'M线本部 · 产品业务处',
+  contestName: '顺丰集团 AI 大赛',
+  track: '个人赛道',
+  organization: '产品业务处',
   author: '孙豪杰',
-  jobTitle: '产品策略支持高级专员',
-  thesis: '通用大语言模型缺乏顺丰特定的业务网络上下文与分析口径标准。我们通过构建独创的「数据语义 · 业务语义 · 分析语义」三层体系，将资深业务专家的隐性分析经验沉淀为可执行的原子 Skill，消除传统问数工具查错表、合错对象、推论缺乏证据链的核心瓶颈，实现从盲目取数到端到端可复核证据链的确定性交付。',
-  targetAudience: '集团及各区部涉及经营分析、业务复盘、客户跟进的数据分析人员与管理者',
+  title: '基于共生智能下的语义层数据分析实践',
+  subtitle: '集团内部首创：构建数据语义 · 业务语义 · 分析语义三层体系',
+  englishTitle: 'Semantic Layer Data Analytics Under Symbiotic Intelligence',
+  thesis: '通用大语言模型无法自主理解顺丰特有的业务网络与经营口径。我们在集团内部首创性地构建了「数据语义 · 业务语义 · 分析语义」三层确定性规则体系，把资深业务专家的隐性分析经验转化为机器可执行的标准化原子能力，从根本上解决传统 ChatBI 查错底表、串错客户、归因断层等核心痛点，实现端到端复杂分析任务的秒级推演与可信交付。',
+  targetAudience: '集团及各区部涉及经营分析、业务复盘、客户跟进的数据分析人员与业务管理者',
 };
+
+// 共生智能发展史与方法论认知 (高阶 AI 方法论)
+export interface SymbioticHistoryMilestone {
+  era: string;
+  year: string;
+  pioneer: string;
+  theme: string;
+  coreConcept: string;
+  significance: string;
+  sfMapping: string;
+}
+
+export const SYMBIOTIC_HISTORY: SymbioticHistoryMilestone[] = [
+  {
+    era: '思想肇始',
+    year: '1960',
+    pioneer: 'J.C.R. Licklider (图灵奖得主导师、网络计算先驱)',
+    theme: '人机共生 (Man-Computer Symbiosis)',
+    coreConcept: '机器不仅是计算器，更是人类大脑的紧密共生伙伴。人负责设定目标、形成假设与进行高阶价值判断；机器负责快速检索、逻辑演算与多维数据变换，形成动态紧耦合的双向协同。',
+    significance: '首次打破了“机器替代人类”或“机器仅仅是被动工具”的二元对立，奠定了现代人机协同的认知基石。',
+    sfMapping: '本次顺丰实践的理论源头：分析师不应沦为取数民工，AI 也不应充当脱缰黑盒；人机协同才是最优智能形态。',
+  },
+  {
+    era: '认知增强',
+    year: '1968',
+    pioneer: 'Douglas Engelbart (交互之父，鼠标与视窗发明人)',
+    theme: '增强人类智能 (Augmenting Human Intellect)',
+    coreConcept: '技术的核心目标不是去模仿甚至取代人类思维，而是通过设计精巧的外部表征系统与交互范式，系统性放大人类解决复杂系统问题的认知带宽与决策敏锐度。',
+    significance: '确立了“以人为中心、系统为放大器”的工程方法论，人机协作的本质是认知表征的显性化。',
+    sfMapping: '业务专家的大脑直觉必须显性化为三层语义结构，成为大模型可调用的结构化知识，从而放大全员的分析战力。',
+  },
+  {
+    era: '单向工具',
+    year: '2010s',
+    pioneer: '传统商业智能与数仓工程界 (Traditional BI & DW)',
+    theme: '被动取数与固定自动化 (Static Query Pipeline)',
+    coreConcept: '依赖固定 SQL 脚本和预设维度报表，人单向编写指令，系统机械执行。人与机器之间缺乏语义层面的理解与双向纠偏能力。',
+    significance: '解决了基础数据的统计汇总效率，但在面对复杂因果分析与非标准化异动归因时，陷入严重的跨部门人力拉扯。',
+    sfMapping: '顺丰过往的经营分析现状：面对突发业绩波动，分析师需耗费 1-2 天在海量数据表和月结卡之间手工核对，效率瓶颈凸显。',
+  },
+  {
+    era: '黑盒幻觉',
+    year: '2023',
+    pioneer: '生成式大模型浪潮 (Generative AI & LLMs)',
+    theme: '概率生成与黑盒交互 (Generative Black Box)',
+    coreConcept: '大模型具备极强的通用自然语言处理能力，但在缺乏企业私域规则约束时，容易基于统计概率生成看似合理实则荒谬的答案（如查错底表、混淆实体关系、把相关性误判为因果）。',
+    significance: '暴露了通用 AI 在专业垂直领域无法直接落地的致命缺陷：看得到酷炫 Demo，但在真实生产环境中不敢直接使用。',
+    sfMapping: '传统 ChatBI 在顺丰无法落地的核心根源：大模型不清楚哪张是数仓认证正式表，更不懂母子月结卡的业务从属关系。',
+  },
+  {
+    era: '顺丰实践',
+    year: '当下 (2024)',
+    pioneer: '产品业务处 · 孙豪杰 与 ChatGPT 深度协同共创',
+    theme: '共生智能认知下的语义层体系 (Symbiotic Semantic Layer)',
+    coreConcept: '回归人机共生精髓：人向大模型输入确定性的「数据语义、业务语义、分析语义」规则，大模型向人提供秒级多维穿透与白盒逻辑推导。在多轮深度思辨中，隐性专家经验被转化为集团可复用的数字资产。',
+    significance: '集团内部首创的语义层数据分析实践：既彻底消除大模型幻觉，又极大释放人类的高阶商业洞察潜力。',
+    sfMapping: '丰景台与领慧小可双平台投产，月活突破 2000+，将 1-2 天的复杂报告制作压缩至 30 分钟，实现 100% 准确与可复核。',
+  },
+];
 
 export const METRICS: MetricItem[] = [
   {
@@ -57,7 +115,7 @@ export const PAIN_POINTS = [
     problem: '缺少数据来源约束、客户主体归并与分析路径规范，AI 容易查错表、合错对象、混淆月结卡。',
     impact: '给出浅层同环比甚至数字相近但口径不符，业务人员仍需回溯底层系统逐笔人工核查，数据“看得到但不敢用”。',
     traditionalFlow: 'AI 输出一个数字 -> 业务心存疑虑 -> 人工登入底层系统对数 1 小时 -> 发现取错中间表',
-    solvedBy: '三层语义强约束：授权表范围、明细与总量必须对齐、主附卡归并、可比周期对齐',
+    solvedBy: '三层语义强约束：授权表范围、明细与总量双向校验、主附卡归并、可比周期对齐',
   },
   {
     id: 'p3',
@@ -74,23 +132,23 @@ export const SEMANTIC_LAYERS: SemanticLayerDef[] = [
   {
     id: 'data',
     title: '数据语义 (Data Semantics)',
-    subtitle: '规范「查什么」与「怎么算」',
+    subtitle: '规范「查什么表」与「如何准确计算」',
     coreQuestion: '底层授权是哪张表？字段口径是哪一条？统计粒度是否严谨？',
     definition: '明确授权数据源范围、字段定义、指标公式、时间边界与组织归属粒度。统一票数与票均收入，严禁相近表混淆替代。',
     rules: [
       '授权数据源限定：严格限制查询只在指定的经过数仓认证的数据集内执行',
       '计算口径强制对齐：严格区分实收收入、计费收入、票均单价等计算逻辑',
-      '明细与总量双向勾稽：要求下钻明细汇总值与宏观总量做二次比对，防重复聚合',
-      '安全与权限围栏：越权字段自动阻断，缺数时限定结论范围，绝不胡编乱造',
+      '明细与总量双向校验：要求下钻明细汇总值与宏观总量做二次比对，防重复聚合',
+      '安全与权限围栏：越权字段自动阻断，缺数时限定结论范围，杜绝无据推测',
     ],
     antiPattern: '传统模式：AI 盲目调用 Text-to-SQL，把已作废的历史临时表当正式表聚合，产出假数字。',
-    bestPractice: '语义层约束：原子 Skill 预置权威表字典与校验算子，确保每次查询底座绝对可信。',
+    bestPractice: '语义层约束：原子 Skill 预置权威表字典与校验算子，确保每次查询底座准确可信。',
     color: '#3B82F6', // Blue
   },
   {
     id: 'business',
     title: '业务语义 (Business Semantics)',
-    subtitle: '规范「对象是谁」与「波动背景如何理解」',
+    subtitle: '规范「分析对象是谁」与「波动背景如何理解」',
     coreQuestion: '客户实体到底指哪个集团主体？大促周期如何选取可比窗口？',
     definition: '定义顺丰核心业务实体关系（如集团主客户与各区部月结卡、账号迁移关系及生效时间），在时间维度上引入业务日历（如618、双11跨期同口径对比）。',
     rules: [
@@ -100,7 +158,7 @@ export const SEMANTIC_LAYERS: SemanticLayerDef[] = [
       '业务背景知识挂载：挂载运力排班、产品线调整等上下文，防止出现脱离实际的误判',
     ],
     antiPattern: '传统模式：将某大客户旗下卡号变更误判为“客户退网流失”，引发虚惊与误导。',
-    bestPractice: '语义层约束：自动映射母子公司关系网，精准捕获业务实质。',
+    bestPractice: '语义层约束：自动映射母子公司关系网络，精准捕获业务实质。',
     color: '#8B5CF6', // Purple
   },
   {
@@ -116,8 +174,8 @@ export const SEMANTIC_LAYERS: SemanticLayerDef[] = [
       '可执行建议生成：结合业务场景输出落地干预动作，形成闭环管理',
     ],
     antiPattern: '传统模式：把两个巧合的趋势图拼在一起直接宣称“因为A导致了B”，结论经不起推敲。',
-    bestPractice: '语义层约束：像资深产品策略分析师一样遵循证据链逻辑，敢于指出数据盲区。',
-    color: '#EF4444', // Red (SF signature accent)
+    bestPractice: '语义层约束：像资深产品策略分析师一样遵循证据链逻辑，严谨指出数据盲区。',
+    color: '#EF4444', // Red
   },
 ];
 
@@ -182,20 +240,20 @@ export const SCORECARD: ScorecardCriterion[] = [
       {
         title: '战略契合度 (10%)',
         weight: '10%',
-        claim: '深度对齐集团 AI 战略核心主线：降本、增效、客体关怀与经营风控。',
-        evidence: '直击本部与区部经营分析中高频的收入回落与异动客户挽留场景，赋能全链路运营与业务决策。',
+        claim: '深度契合集团数字化战略核心主线：降本、增效、客群关怀与经营风控。',
+        evidence: '直击本部与区部经营分析中高频的收入回落与异动客户挽留场景，赋能全链路业务分析决策。',
       },
       {
         title: '量化业务价值 (15%)',
         weight: '15%',
-        claim: '数据查询提效 92%~96%，诊断报告撰写从 1-2天 压缩至 30分钟 (提效 94%~97%)。',
+        claim: '日常数据查询提效 92%~96%，诊断报告撰写从 1-2天 压缩至 30分钟 (提效 94%~97%)。',
         evidence: '基于真实产品业务处与区部实测数据，前后对比清晰无虚假，直接为每位分析师每周节约 15+ 工时。',
       },
       {
         title: '影响人群规模 (10%)',
         weight: '10%',
         claim: '已集成至产品智能体，月活用户超过 2000+。',
-        evidence: '覆盖 M 线本部及全国多区部，理论上可复制覆盖顺丰集团所有与数据分析相关的团队与数智化岗位。',
+        evidence: '覆盖 M 线本部及全国多区部，可向顺丰集团所有与数据分析相关的团队与数智化岗位推广复用。',
       },
     ],
   },
@@ -206,20 +264,20 @@ export const SCORECARD: ScorecardCriterion[] = [
       {
         title: '方案完整度 (15%)',
         weight: '15%',
-        claim: '具备端到端全链路工程闭环：业务痛点 -> 三层语义建模 -> 平台工程装载 -> 自动化报告验收 -> 规则写回版本。',
-        evidence: '不只是写 Prompt，而是构建了完整原子 Skill、反例构造、回归评测与版本库迭代闭环。',
+        claim: '具备端到端全链路工程闭环：业务痛点 -> 三层语义建模 -> 平台工程装载 -> 自动化报告验收 -> 规则持续迭代。',
+        evidence: '不局限于零碎 Prompt，而是构建了完整原子 Skill、反例构造、回归评测与版本库迭代闭环。',
       },
       {
         title: '可行性与工程搭建 (10%)',
         weight: '10%',
         claim: '双平台落地运行：丰景台智能小景 Agent + 领慧 AI 工作台小可机器人 (钉钉原生)。',
-        evidence: '完成角色配置、大模型与 Skill 挂载、数仓工具权限纳管与上线试用，运行稳定丝滑。',
+        evidence: '完成角色配置、大模型与 Skill 挂载、数仓工具权限纳管与上线试用，运行稳定高效。',
       },
       {
-        title: 'AI 必要性及实质有效 (5%)',
+        title: '实质有效性 (5%)',
         weight: '5%',
-        claim: '破除传统 ChatBI“看得到不敢用、返回一个数无法闭环”的核心顽疾。',
-        evidence: '证明大模型通用推理必须与顺丰业务语义与分析语义深度锚定，AI 真正具备业务因果解析能力。',
+        claim: '解决传统 ChatBI“看得到不敢用、仅返回单个数值无法收口”的根本痛点。',
+        evidence: '证明大模型通用推理必须与顺丰业务语义与分析语义深度锚定，AI 方能具备严谨因果解析能力。',
       },
     ],
   },
@@ -231,13 +289,13 @@ export const SCORECARD: ScorecardCriterion[] = [
         title: '跨业务可复用性 (10%)',
         weight: '10%',
         claim: '首个 Skill 梳理 3-4 小时，后续相近区域或任务半天内即可完成快速迁移。',
-        evidence: '语义架构与底层平台解耦，保留业务判断方法，重新挂接本地数据与权限即可极速生效。',
+        evidence: '语义架构与底层平台解耦，保留业务判断方法，重新挂接本地数据与权限即可快速生效。',
       },
       {
         title: '核心创新性 (10%)',
         weight: '10%',
-        claim: '“共生智能 (Cognitive Shift)”认知跃迁：人机对话反思中提炼组织沉淀，首次提出三层语义隔离交付。',
-        evidence: '将贡献度、原因与证据边界解耦交付，打破把相关性当因果性的业内顽疾。',
+        claim: '人机共生方法论创新：人机对话深度思辨沉淀为组织规则，集团内部首次提出三层语义隔离交付。',
+        evidence: '将贡献度、原因与证据边界解耦交付，打破把相关性当因果性的行业误区。',
       },
       {
         title: '持续迭代潜力 (5%)',
@@ -252,10 +310,10 @@ export const SCORECARD: ScorecardCriterion[] = [
     weight: 10,
     subitems: [
       {
-        title: '故事性与答辩流畅度 (10%)',
+        title: '叙事逻辑与答辩呈现 (10%)',
         weight: '10%',
-        claim: '超级个体真实心路、直击业务痛点、交互式数据沙盘与现场可互动 Demo。',
-        evidence: '提供 PPT 大屏演讲模式与全景控制台模式无缝切换，为决赛答辩提供震撼视听体验。',
+        claim: '真实业务痛点剖析、人机共生溯源、交互式数据沙盘与现场可互动 Demo。',
+        evidence: '提供 PPT 大屏演讲模式与全景控制台模式无缝切换，为路演答辩提供清晰顺畅的视听体验。',
       },
     ],
   },
